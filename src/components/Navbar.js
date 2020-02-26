@@ -210,13 +210,13 @@ function Navbar() {
                 className="ml1 pointer black"
                 onClick={() => {
                   localStorage.removeItem(AUTH_TOKEN)
-                  this.props.history.push(`/`)
+                  // this.props.history.push(`/`)
                 }}
               >
                 logout
               </div>
             ) : (
-              <Link to="/" className="ml1 no-underline black">
+              <Link to="/login" className="ml1 no-underline black">
                 login
               </Link>
 
