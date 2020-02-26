@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Login from './Login'
 import Navbar from './Navbar'
+import Home from './Home'
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
       <Navbar />
       <div className="ph3 pv1 background-gray">
         <Switch>
-          <Route exact path="/" component={Login} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </div>
     </div>
